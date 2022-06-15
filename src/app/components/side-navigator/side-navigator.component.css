@@ -50,6 +50,7 @@ h3 span,
 i {
    color: rgb(255, 255, 255);
    padding-right: 10px;
+   font-weight: bold;
 }
 
 .nav-list i {
