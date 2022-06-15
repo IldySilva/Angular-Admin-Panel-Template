@@ -1,0 +1,40 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened="true" fixedInViewport="true">
+
+        <div class="logoContainer">
+
+            <h3>My<span>Kiami</span></h3>
+    
+        </div>
+
+
+        <mat-nav-list class="nav-list">
+            <a mat-list-item class="list-item">
+                <i class="material-icons">dashboard</i> Dashbooard</a>
+
+
+            <p class="sectionTitle">Managenment</p>
+
+            <a mat-list-item> <i class="material-icons"> people</i>Costumers</a>
+            <a mat-list-item> <i class="material-icons"> shopping_cart</i>Orders</a>
+            <a mat-list-item ><i class="material-icons"> local_offer</i>Products</a>
+            <a mat-list-item ><i class="material-icons"> list_alt</i>Invoices</a>
+
+            <p class="sectionTitle">Pages</p>
+            <a mat-list-item> <i class="material-icons"> lock</i>Authentication</a>
+            <a mat-list-item> <i class="material-icons"> calendar_today</i>Calendar</a>
+
+            <p class="sectionTitle">Components</p>
+            <a mat-list-item> <i class="material-icons"> bar_chart</i>Charts</a>
+            <a mat-list-item> <i class="material-icons"> apps</i>UI Elements</a>
+
+        </mat-nav-list>
+      
+    </mat-sidenav>
+
+    <mat-sidenav-content class="mainContent">
+  
+<router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
