@@ -1,0 +1,28 @@
+form{
+
+    display: flex;
+    flex-direction: column;
+}
+.cancel {
+
+
+    border: 1px solid rgb(0, 117, 128);
+    margin-left: 10px;
+    color: rgb(0, 117, 128);
+    }
+    .saveButton{
+    color: white;
+    background-color: rgb(0, 117, 128)
+    
+    }
+    
+    button{
+        width: 15%;
+        height: 3rem;
+        }
+    .formField{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    

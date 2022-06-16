@@ -1,0 +1,23 @@
+.cancel {
+
+
+    border: 1px solid var(--mainColor);
+    margin-left: 10px;
+    color: var(--mainColor)
+    }
+    .saveButton{
+    color: white;
+    background-color: var(--mainColor)
+    
+    }
+    
+    button{
+        width: 15%;
+        height: 3rem;
+        }
+    .formField{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    

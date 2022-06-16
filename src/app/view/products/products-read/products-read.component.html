@@ -1,7 +1,8 @@
-<div class="mainContent">
+<div class="content">
+
 
     <div class="buttons-row">
-        <button class="mainButtons" mat-raised-button>Add New</button>
+        <button class="mainButtons"  (click)="NavigateToAddNewProduct()" mat-raised-button>Add New</button>
 <div class="filterAndSearch">
     <mat-form-field >
         <input class="searchbox" matInput placeholder="Search by name"  >
@@ -17,10 +18,10 @@
   
 </div>
     </div>
-    <h3>All  Registered Products</h3>
+    <h3>All  Registered Costumers</h3>
     <div class="costumerscontent">
-      
-  <div class="tableContent">
-  </div>
-    </div>
+
+        
+        <app-table></app-table>
 </div>
+

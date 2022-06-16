@@ -8,7 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AppComponent {
 
-  private _userIsLogged = new BehaviorSubject<boolean>(false);
+  private _userIsLogged = new BehaviorSubject<boolean>(true);
   private _isLoading = new BehaviorSubject<boolean>(false);
 
   get isLoading(): boolean {

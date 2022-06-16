@@ -1,0 +1,28 @@
+<div class="container">
+
+
+    <mat-card class="mat-elevation-z4 ">
+        <form action="" class="formField">
+
+            <mat-form-field>
+                <input matInput placeholder="Name"    name="name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Price ($)" name="price">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Supplier" name="supplier">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="date" placeholder="Date" name="supplier">
+            </mat-form-field>
+               
+        </form>
+
+        <button mat-raised-button class="saveButton" (click)="saveProduct()">Save</button>
+        <button mat-flat-button class="cancel Button" (click)="returnToPreviousPage()">Cancel</button>
+
+    </mat-card>
+</div>
