@@ -1,0 +1,28 @@
+<div class="mainContent">
+
+    <div class="buttons-row">
+        <button class="mainButtons" mat-raised-button>Add New</button>
+<div class="filterAndSearch">
+    <mat-form-field >
+        <input class="searchbox" matInput placeholder="Search by name"  >
+    
+    </mat-form-field>
+    <i class="material-icons" [matMenuTriggerFor]="menu" >filter_list</i>
+    <mat-menu #menu="matMenu"  class="menu" >
+        <p class="showOnly">Show only:</p>
+        <button mat-menu-item>Item 2</button>
+        <button mat-menu-item> Item 3</button>
+        <button mat-menu-item> Item 4</button>
+      </mat-menu>
+  
+</div>
+    </div>
+    <h3>All  Registered Costumers</h3>
+    <div class="costumerscontent">
+      
+  <div class="tableContent">
+
+    <app-table-read></app-table-read>
+  </div>
+    </div>
+</div>

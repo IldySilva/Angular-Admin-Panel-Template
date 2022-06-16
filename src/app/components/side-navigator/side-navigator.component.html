@@ -1,27 +1,30 @@
 <mat-sidenav-container class="container">
     <mat-sidenav class="sidenav" mode="side" opened="true" fixedInViewport="true">
 
-        <div class="logoContainer">
+        <div routerLink="" class="logoContainer">
 
-            <h3>Great<span>Admin</span></h3>
+         <h3>Great<span>Admin</span></h3>
     
         </div>
 
 
         <mat-nav-list class="nav-list">
-            <a mat-list-item class="list-item">
-                <i class="material-icons">dashboard</i> Dashbooard</a>
+            <a mat-list-item class="list-item" routerLink="/">
 
+
+                <i class="material-icons">home</i> Home</a>
+                <a mat-list-item class="list-item" routerLink="dashboard">
+                    <i class="material-icons">dashboard</i> Dashbooard</a>
 
             <p class="sectionTitle">Managenment</p>
 
-            <a mat-list-item> <i class="material-icons"> people</i>Costumers</a>
-            <a mat-list-item> <i class="material-icons"> shopping_cart</i>Orders</a>
-            <a mat-list-item ><i class="material-icons"> local_offer</i>Products</a>
-            <a mat-list-item ><i class="material-icons"> list_alt</i>Invoices</a>
+            <a mat-list-item routerLink="costumers"> <i class="material-icons"> people</i>Costumers</a>
+            <a mat-list-item routerLink="orders"> <i class="material-icons"> shopping_cart</i>Orders</a>
+            <a mat-list-item routerLink="products" ><i class="material-icons"> local_offer</i>Products</a>
+            <a mat-list-item routerLink="invoices"><i class="material-icons"> list_alt</i>Invoices</a>
 
             <p class="sectionTitle">Pages</p>
-            <a mat-list-item> <i class="material-icons"> lock</i>Authentication</a>
+            <a mat-list-item routerLink="authentication"> <i class="material-icons"> lock</i>Authentication</a>
             <a mat-list-item> <i class="material-icons"> calendar_today</i>Calendar</a>
 
             <p class="sectionTitle">Components</p>

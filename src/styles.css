@@ -1,12 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
 :root{
     --mainColor:rgb(0, 72, 118);
  
  }
 
 html, body { height: 100%;}
-body { margin: 0; font-family: Poppins, "Poppins", sans-serif; }
+body { margin: 0;    font-family: Poppins, 'Poppins', sans-serif;}
 ::-webkit-scrollbar {
     background-color: darkgrey;
     width: 10px;
@@ -29,3 +28,20 @@ background-color: white;
     
     
     }
+    .mainButtons{
+
+      width: 150px;
+      height: 40px;
+      background-color: var(--mainColor)
+      ;color: white;
+      
+      } 
+        .content{
+          overflow-y: scroll;
+          
+          height: 86vh;
+          margin: 20px;
+          
+          }
+      
+    

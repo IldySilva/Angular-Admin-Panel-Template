@@ -17,7 +17,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-
+import { HomeComponent } from './view/home/home.component';
+import { LoginComponent } from './view/login/login.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { CostumersComponent } from './view/costumers/costumers.component';
+import { TableReadComponent } from './components/costumers/table-read/table-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import{MatInputModule} from "@angular/material/input"
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -26,12 +35,22 @@ import { LayoutModule } from '@angular/cdk/layout';
     ToolBarComponent,
     BottomBarComponent,
     DashboardComponent,
+    HomeComponent,
+    LoginComponent,
+    LogoComponent,
+    CostumersComponent,
+    TableReadComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule,MatListModule,MatToolbarModule, MatIconModule, MatGridListModule, MatCardModule, MatMenuModule, MatButtonModule, LayoutModule 
+    MatSidenavModule,MatListModule,MatToolbarModule,
+     MatIconModule, 
+     MatGridListModule, 
+     MatCardModule,MatFormFieldModule,
+      MatMenuModule,
+       MatButtonModule, LayoutModule, MatTableModule, MatPaginatorModule, MatSortModule ,MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

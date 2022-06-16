@@ -1,0 +1,14 @@
+h3 {
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    color: var(--skin-color)
+}
+
+h3 span,
+i {
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+    font-weight: bold;
+}
