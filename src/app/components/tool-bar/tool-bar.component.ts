@@ -1,3 +1,4 @@
+import { AppComponent } from './../../app.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private app:AppComponent) { }
 
   ngOnInit(): void {
   }
+logout(){
+this.app.userIsLogged=false;
 
+
+}
 }

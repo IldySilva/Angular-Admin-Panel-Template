@@ -1,3 +1,4 @@
+import { AppComponent } from './../../app.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appComponent: AppComponent) { }
 
   ngOnInit(): void {
   }
+
+login (){
+
+this.appComponent.userIsLogged=true;
+console.log(this.appComponent.userIsLogged)
+}
 
 }
