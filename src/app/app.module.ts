@@ -27,6 +27,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import{MatInputModule} from "@angular/material/input"
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     LogoComponent,
     CostumersComponent,
     TableReadComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

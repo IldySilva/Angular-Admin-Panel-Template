@@ -1,7 +1,7 @@
 .loginContent{
 height: 100%;
 width: 100%;
-background-color: rgba(82, 82, 82, 0.452);
+background-color: rgba(0, 62, 86, 0.452);
 position: absolute;
 z-index: 10;
 display: flex;
@@ -58,3 +58,19 @@ text-decoration: underline;
 color: var(--mainColor);
 }
 
+.animationIf.ng-enter,
+.animationIf.ng-leave {
+  -webkit-transition: opacity ease-in-out 1s;
+  -moz-transition: opacity ease-in-out 1s;
+  -ms-transition: opacity ease-in-out 1s;
+  -o-transition: opacity ease-in-out 1s;
+  transition: opacity ease-in-out 1s;
+}
+.animationIf.ng-enter,
+.animationIf.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.animationIf.ng-leave,
+.animationIf.ng-enter.ng-enter-active {
+  opacity: 1;
+}
