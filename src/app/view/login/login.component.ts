@@ -1,6 +1,13 @@
 import { AppComponent } from './../../app.component';
 import { Component, OnInit } from '@angular/core';
-import { delay } from 'rxjs';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
+class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-login',
@@ -10,26 +17,31 @@ import { delay } from 'rxjs';
 export class LoginComponent implements OnInit {
 
   constructor(private appComponent: AppComponent) { }
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
 
+  matcher = new MyErrorStateMatcher();
   ngOnInit(): void {
   }
 
 
-login (){
-  this.appComponent.userIsLogged=true;
-  setTimeout(() => {
+  login() {
+    setTimeout(() => {
+
+      this.appComponent.userIsLogged = true;
+
+      this.appComponent.isLoading = false;
+
+    }, 4000);
+    this.appComponent.isLoading = true;
 
 
-    this.appComponent.isLoading=false;
-    
-  }, 4000);
-  console.log( this.appComponent.isLoading)
-  this.appComponent.isLoading=true;
 
 
 
-
+  }
 
 }
 
-}

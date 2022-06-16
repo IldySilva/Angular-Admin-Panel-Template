@@ -28,7 +28,10 @@ import { MatSortModule } from '@angular/material/sort';
 import{MatInputModule} from "@angular/material/input"
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { LoadingComponent } from './components/loading/loading.component';
-
+import {  } from "@angular/material/dialog";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatProgressSpinnerModule, ProgressSpinnerMode } from "@angular/material/progress-spinner";
+import { InputErrorComponent } from './components/input-error/input-error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +45,7 @@ import { LoadingComponent } from './components/loading/loading.component';
     CostumersComponent,
     TableReadComponent,
     LoadingComponent,
+    InputErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,7 @@ import { LoadingComponent } from './components/loading/loading.component';
      MatGridListModule, 
      MatCardModule,MatFormFieldModule,
       MatMenuModule,
-       MatButtonModule, LayoutModule, MatTableModule, MatPaginatorModule, MatSortModule ,MatInputModule
+       MatButtonModule, LayoutModule, MatTableModule, MatPaginatorModule, MatSortModule ,MatInputModule,MatProgressSpinnerModule,MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
